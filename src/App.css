@@ -40,6 +40,15 @@
     box-shadow: #333 0px 1px 5px;
 }
 
+.btn-item button {
+    background-color: green;
+    border: 0px;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: #333 0px 1px 5px;
+}
+
 .img-wrapper img {
     width: 100px;
     margin-top: -10px;

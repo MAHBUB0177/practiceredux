@@ -1,6 +1,7 @@
 import React from 'react'
 import mobile from './images/no_image.png'
 function Home(props) {
+    console.log(props)
     return (
         <div>
            
@@ -19,11 +20,19 @@ function Home(props) {
                 </div>
                 <div className="btn-wrapper item">
                     <button 
-                    onClick={
-                        ()=>{props.addToCartHandler({pice:1000,name:'i phone 11'})}
-                        }>
-                        Add To Cart</button>
+                    onClick={()=>{props.addToCartHandler({pice:1000,name:'i phone 11'})}}>
+                    Add To Cart</button>
+
+
+                    <button  style={{backgroundColor:'green',marginTop:'5px'}}
+                    onClick={()=>{props.removeToCartHandler()}}>
+                    remove To Cart</button>
+               
+
                 </div>
+
+               
+                
             </div>
         </div>
     )
